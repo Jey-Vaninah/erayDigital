@@ -1,0 +1,4 @@
+;/*FB_PKG_DELIM*/
+
+__d("composerScheduledFromDraftTransform",["CometTime"],(function(t,n,r,o,a,i,l){"use strict";function e(e,t,n){if(e.isEligibleForDraftPost!==!0||e.isEditingPreExistingStory!==!0||e.scheduledPostDate==null||e.setDraftIntoPublishedState===!0)return n(t);n(babelHelpers.extends({},t,{unpublished_content_data:{scheduled_publish_time:o("CometTime").toSeconds(e.scheduledPostDate),unpublished_content_type:"SCHEDULED"}}))}l.default=e}),98);
+__d("getComposerAttachmentStableID",[],(function(t,n,r,o,a,i){"use strict";function e(e){return"file"in e&&e.file.uploadID!=null?e.file.uploadID:"entID"in e&&e.entID!=null?e.entID:null}i.default=e}),66);
