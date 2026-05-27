@@ -1,5 +1,5 @@
-import logo from "../assets/logo.jpg";
-import Button from "./Button";
+import logo from "../../assets/logo.jpg";
+import Button from "../ui/Button";
 
 const menuItems = ["Home", "Services", "Projects", "Blog", "About", "Pricing"];
 
