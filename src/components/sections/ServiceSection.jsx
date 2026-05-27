@@ -4,7 +4,7 @@ import { FaCode, FaPalette, FaBullhorn } from "react-icons/fa";
 
 function ServicesSection() {
     return (
-        <section className="py-20 px-6 md:px-20 bg-gray-100">
+        <section id="services" className="py-20 px-6 md:px-20 bg-gray-100">
 
             <div className="flex flex-col md:flex-row justify-between gap-10 mb-16">
 

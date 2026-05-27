@@ -11,34 +11,45 @@ import {
 
 export default function TopBar() {
     return (
-        <div className="bg-primary-dark text-white text-sm h-12 flex items-center justify-between px-4 md:px-10">
+        <div className="bg-primary-dark text-white text-sm h-12 flex items-center w-full">
 
-            <div className="flex gap-6 items-center">
+            <div className="flex items-center gap-6 px-4 md:px-10 flex-1">
 
-                <div className="flex items-center gap-2">
-                    <FaPhoneAlt className="text-sm" />
+                <a
+                    href="tel:+261384696729"
+                    className="flex items-center gap-2 hover:text-gray-200 transition"
+                >
+                    <FaPhoneAlt className="text-sm text-white" />
                     <span>(+261) 38 46 967 29</span>
-                </div>
+                </a>
 
-                <div className="flex items-center gap-2">
-                    <FaEnvelope className="text-sm" />
+                <a
+                    href="#contact"
+                    className="flex items-center gap-2 hover:text-gray-200 transition"
+                >
+                    <FaEnvelope className="text-sm text-white" />
                     <span>eraydigital.direction@gmail.com</span>
-                </div>
+                </a>
 
-                <div className="flex items-center gap-2">
-                    <FaMapMarkerAlt className="text-sm" />
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Anosisoa+Ambohimanarina"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 hover:text-gray-200 transition"
+                >
+                    <FaMapMarkerAlt className="text-sm text-white" />
                     <span>Anosisoa Ambohimanarina</span>
-                </div>
+                </a>
 
             </div>
 
-            <div className="flex items-center gap-4 bg-primary px-5 h-full border-l-4 border-primary-light">
+            <div className="flex items-center gap-4 bg-primary h-full border-l-4 border-primary-light rounded-tl-[20px] rounded-bl-[4px] px-4">
 
-                <FaFacebookF className="w-4 h-4" />
-                <FaTwitter className="w-4 h-4" />
-                <FaInstagram className="w-4 h-4" />
-                <FaTiktok className="w-4 h-4" />
-                <FaGlobe className="w-4 h-4 cursor-pointer" />
+                <FaFacebookF className="w-4 h-4 text-white" />
+                <FaTwitter className="w-4 h-4 text-white" />
+                <FaInstagram className="w-4 h-4 text-white" />
+                <FaTiktok className="w-4 h-4 text-white" />
+                <FaGlobe className="w-4 h-4 text-white" />
 
             </div>
 

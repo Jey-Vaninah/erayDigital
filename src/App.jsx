@@ -11,14 +11,14 @@ function App() {
     <>
       <Header />
 
-      <main>
+      <main className="pt-[15px]">
         <HeroSection />
+        <BottomBar />
         <ApproachSection />
         <AboutSection />
         <ServicesSection />
       </main>
 
-      <BottomBar />
     </>
   );
 }

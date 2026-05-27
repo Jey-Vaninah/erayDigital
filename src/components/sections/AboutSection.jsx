@@ -7,7 +7,7 @@ import { stats } from "../../data/stats";
 
 function AboutSection() {
     return (
-        <section className="w-full bg-white py-16 px-6 md:px-20">
+        <section id="about" className="w-full bg-white py-16 px-6 md:px-20">
 
             <div className="mb-12 flex flex-col items-center text-center">
 
@@ -48,7 +48,7 @@ function AboutSection() {
 
                             <div className="flex justify-center">
 
-                                <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-primary shadow-md">
+                                <div className="w-32 h-32 rounded-full overflow-hidden border-1 border-primary shadow-md">
 
                                     <img
                                         src="https://images.unsplash.com/photo-1552664730-d307ca884978"
@@ -74,7 +74,7 @@ function AboutSection() {
 
                 <div className="flex flex-col justify-start">
 
-                    <p className="text-gray-600 text-lg md:text-xl mb-8 leading-relaxed">
+                    <p className="text-gray-600 text-lg md:text-xl mb-8 leading-relaxed text-justify">
 
                         ErayDigital, c’est l’alliance du développement web,
                         du logiciel sur mesure, du design moderne
@@ -84,6 +84,11 @@ function AboutSection() {
                         startups et entrepreneurs dans la création
                         de solutions digitales performantes,
                         évolutives et adaptées à leurs objectifs.
+
+                        Notre approche repose sur l’écoute, l’analyse et l’innovation.
+                        Nous transformons vos idées en produits digitaux concrets, intuitifs et efficaces,
+                        tout en assurant un accompagnement continu à chaque étape :
+                        de la conception à la mise en ligne, puis à l’optimisation.
 
                     </p>
 
@@ -107,7 +112,7 @@ function AboutSection() {
                     </div>
 
                     <Button
-                        text="A propos de nous"
+                        text="Parler à un expert "
                         icon={FaArrowRight}
                     />
 

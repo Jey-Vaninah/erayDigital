@@ -1,40 +1,31 @@
 import logo from "../../assets/logo.jpg";
 import Button from "../ui/Button";
+import { menuItems } from "../../constants/menuItems";
 
-const menuItems = ["Home", "Services", "Projects", "Blog", "About", "Pricing"];
-
-export default function Navbar() {
+function Navbar() {
     return (
-        <div className="flex justify-between items-center px-6 md:px-10 py-4 bg-white shadow-md">
+        <nav className="flex justify-between items-center px-6 md:px-10 py-4 bg-white shadow-md">
 
             <div className="flex items-center gap-3">
-
-                <img
-                    src={logo}
-                    alt="Logo"
-                    className="w-14 h-14 object-contain"
-                />
-
-                <div className="text-primary font-bold text-xl">
-                    Eray Digital
-                </div>
-
+                <img src={logo} className="w-14 h-14" />
+                <span className="font-bold text-primary text-xl">Eray Digital</span>
             </div>
 
-            <div className="hidden md:flex gap-8 text-gray-700 font-medium">
+            <div className="hidden md:flex gap-8 font-medium text-gray-700">
                 {menuItems.map((item) => (
                     <a
-                        key={item}
-                        href="#"
+                        key={item.id}
+                        href={`#${item.id}`}
                         className="hover:text-primary transition"
                     >
-                        {item}
+                        {item.label}
                     </a>
                 ))}
             </div>
 
             <Button text="Get a Quote" />
-
-        </div>
+        </nav>
     );
 }
+
+export default Navbar;

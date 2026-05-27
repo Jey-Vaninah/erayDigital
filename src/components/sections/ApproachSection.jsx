@@ -11,7 +11,7 @@ const points = [
 
 function ApproachSection() {
     return (
-        <section className="py-24 px-6 md:px-20 bg-gray-50 flex items-center relative overflow-hidden">
+        <section id="Approach" className="py-24 px-6 md:px-20 bg-gray-50 flex items-center relative overflow-hidden">
 
             <div className="absolute -top-20 -left-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
 
@@ -41,22 +41,6 @@ function ApproachSection() {
                         la croissance digitale de votre entreprise.
                     </p>
 
-                    <div className="grid grid-cols-2 gap-4">
-
-                        {points.map((item, index) => (
-                            <div
-                                key={index}
-                                className="flex items-center gap-3 bg-white px-4 py-3 rounded-xl shadow-sm hover:shadow-md transition"
-                            >
-                                <FaCheck className="text-primary" />
-                                <span className="text-gray-700 text-sm">
-                                    {item}
-                                </span>
-                            </div>
-                        ))}
-
-                    </div>
-
                     <div className="grid grid-cols-2 gap-y-4 mb-10">
                         {points.map((item, index) => (
                             <div
@@ -70,9 +54,10 @@ function ApproachSection() {
                     </div>
 
                     <Button
-                        text="About Us"
+                        text="A propos de Nous"
                         variant="outline"
                         icon={FaArrowRight}
+                        onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
                     />
 
                 </div>
