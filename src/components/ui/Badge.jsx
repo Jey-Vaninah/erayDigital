@@ -1,11 +1,10 @@
-export default function Badge({ text }) {
+function Badge({ text }) {
     return (
         <div className="flex items-center gap-3 mb-6">
-
-            <div className="flex items-center">
-                <div className="w-3 h-3 bg-primary rounded-full"></div>
-                <div className="w-3 h-3 border-2 border-primary rounded-full -ml-1"></div>
-                <div className="w-3 h-3 border-2 border-primary rounded-full -ml-1"></div>
+            <div className="flex">
+                <span className="w-3 h-3 bg-primary rounded-full" />
+                <span className="w-3 h-3 border-2 border-primary rounded-full -ml-1" />
+                <span className="w-3 h-3 border-2 border-primary rounded-full -ml-1" />
             </div>
 
             {text && (
@@ -13,7 +12,8 @@ export default function Badge({ text }) {
                     {text}
                 </p>
             )}
-
         </div>
     );
 }
+
+export default Badge;
