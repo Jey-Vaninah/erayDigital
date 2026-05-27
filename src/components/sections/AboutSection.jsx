@@ -2,16 +2,13 @@ import Badge from "../ui/Badge";
 import Button from "../ui/Button";
 import ProgressBar from "../ui/ProgressBar";
 import StatCard from "../ui/StatCard";
-
 import { FaArrowRight } from "react-icons/fa";
-
 import { stats } from "../../data/stats";
 
 function AboutSection() {
     return (
         <section className="w-full bg-white py-16 px-6 md:px-20">
 
-            {/* TITLE */}
             <div className="mb-12 flex flex-col items-center text-center">
 
                 <Badge text="A propos de nous" />
@@ -23,10 +20,8 @@ function AboutSection() {
 
             </div>
 
-            {/* CONTENT */}
             <div className="grid md:grid-cols-2 gap-10 items-start">
 
-                {/* LEFT IMAGES */}
                 <div className="space-y-6">
 
                     <div className="flex gap-6 items-stretch h-[320px]">
@@ -44,11 +39,11 @@ function AboutSection() {
                         <div className="w-2/5 flex flex-col justify-between h-full">
 
                             <div className="flex justify-center">
-                                <div className="w-28 h-14 bg-primary rounded-b-full"></div>
+                                <div className="w-28 h-14 bg-primary rounded-b-full" />
                             </div>
 
                             <div className="flex justify-center">
-                                <div className="w-28 h-14 bg-primary rounded-t-full"></div>
+                                <div className="w-28 h-14 bg-primary rounded-t-full" />
                             </div>
 
                             <div className="flex justify-center">
@@ -77,7 +72,6 @@ function AboutSection() {
 
                 </div>
 
-                {/* RIGHT CONTENT */}
                 <div className="flex flex-col justify-start">
 
                     <p className="text-gray-600 text-lg md:text-xl mb-8 leading-relaxed">
@@ -121,7 +115,6 @@ function AboutSection() {
 
             </div>
 
-            {/* STATS */}
             <div className="grid grid-cols-2 md:grid-cols-4 text-center mt-16 gap-6">
 
                 {stats.map((stat) => (

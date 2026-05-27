@@ -7,7 +7,6 @@ function HeroSection() {
     return (
         <section className="flex flex-col md:flex-row">
 
-            {/* LEFT */}
             <div className="w-full md:w-1/2 flex items-center px-8 md:px-16 py-10 bg-gray-100">
 
                 <div>
@@ -41,6 +40,7 @@ function HeroSection() {
                         <Button
                             text="Learn More"
                             variant="link"
+                            underline
                         />
 
                     </div>
@@ -49,7 +49,6 @@ function HeroSection() {
 
             </div>
 
-            {/* RIGHT */}
             <div className="w-full md:w-1/2 flex items-center justify-center bg-primary min-h-[500px] md:min-h-screen">
 
                 <h1 className="text-5xl font-bold text-white">
