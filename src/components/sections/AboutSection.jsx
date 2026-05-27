@@ -39,11 +39,11 @@ function AboutSection() {
                         <div className="w-2/5 flex flex-col justify-between h-full">
 
                             <div className="flex justify-center">
-                                <div className="w-28 h-14 bg-primary rounded-b-full" />
+                                <div className="w-28 h-14 bg-white rounded-b-full border-2 border-primary" />
                             </div>
 
                             <div className="flex justify-center">
-                                <div className="w-28 h-14 bg-primary rounded-t-full" />
+                                <div className="w-28 h-20 bg-white rounded-t-full border-2 border-primary" />
                             </div>
 
                             <div className="flex justify-center">
