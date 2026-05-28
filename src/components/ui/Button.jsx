@@ -1,4 +1,4 @@
-function Button({
+export default function Button({
     text,
     variant = "primary",
     icon: Icon,
@@ -32,5 +32,3 @@ function Button({
         </button>
     );
 }
-
-export default Button;

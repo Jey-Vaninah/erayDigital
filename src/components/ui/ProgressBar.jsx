@@ -1,4 +1,4 @@
-function ProgressBar({ label, percent }) {
+export default function ProgressBar({ label, percent }) {
     return (
         <div>
             <div className="flex justify-between mb-1">
@@ -15,5 +15,3 @@ function ProgressBar({ label, percent }) {
         </div>
     );
 }
-
-export default ProgressBar;

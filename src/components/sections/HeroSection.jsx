@@ -1,28 +1,24 @@
 import Badge from "../ui/Badge";
 import Button from "../ui/Button";
-import bg from "../../assets/bg.jpg";
+import bg from "../../assets/1.png";
 import { FaArrowRight } from "react-icons/fa";
-import HireBadge from "../hero/HireBadge";
-import HeroMask from "../hero/HeroMask";
 
-function HeroSection() {
+
+export default function HeroSection() {
     return (
         <section id="home" className="flex flex-col md:flex-row">
 
-            <div className="w-full md:w-1/2 flex items-center px-8 md:px-16 py-10 bg-gray-100">
+            <div className="w-full md:w-1/2 flex items-center px-10 md:px-20 py-12 bg-gray-100">
 
-                <div className="max-w-xl mt-25">
-
+                <div className="max-w-2xl mt-28">
                     <Badge text="Elevate Your Brand With Us" />
-
-                    <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                    <h1 className="text-6xl md:text-7xl font-bold text-gray-900 leading-tight mb-8">
                         ErayDigital <br />
                         <span className="text-primary">Agence Web &</span>
                         <br />
                         Marketing Digital
                     </h1>
-
-                    <p className="text-gray-600 text-lg leading-relaxed mb-8">
+                    <p className="text-gray-600 text-xl leading-relaxed mb-10">
                         Chez ErayDigital, nous transformons vos idées en expériences digitales
                         captivantes et sur mesure pour votre succès.
                     </p>
@@ -36,23 +32,14 @@ function HeroSection() {
 
             </div>
 
-            <div className="relative w-full md:w-1/2 min-h-[520px] md:min-h-screen overflow-hidden bg-[#f3f4f6]">
-
-                <div
-                    className="absolute inset-0 bg-cover bg-center grayscale"
-                    style={{ backgroundImage: `url(${bg})` }}
+            <div className="relative w-full md:w-1/2 min-h-[520px] md:min-h-screen overflow-hidden bg-[#f3f4f6] flex items-center justify-center">
+                <img
+                    src={bg}
+                    alt="visual"
+                    className="w-[650px] md:w-[850px] object-contain"
                 />
-
-                <div className="absolute inset-0 bg-black/10" />
-
-                <HeroMask />
-
-                <HireBadge />
-
             </div>
 
         </section>
     );
 }
-
-export default HeroSection;

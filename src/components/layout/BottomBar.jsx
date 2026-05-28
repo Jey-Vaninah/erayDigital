@@ -8,7 +8,7 @@ const items = [
     "Performance Ads",
 ];
 
-function BottomBar() {
+export default function BottomBar() {
     return (
         <div className="overflow-hidden bg-primary-dark border-t">
             <div className="flex w-max animate-marquee py-3">
@@ -22,5 +22,3 @@ function BottomBar() {
         </div>
     );
 }
-
-export default BottomBar;

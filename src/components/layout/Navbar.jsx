@@ -2,7 +2,7 @@ import logo from "../../assets/logo.jpg";
 import Button from "../ui/Button";
 import { menuItems } from "../../constants/menuItems";
 
-function Navbar() {
+export default function Navbar() {
     return (
         <nav className="flex justify-between items-center px-6 md:px-10 py-4 bg-white shadow-md">
 
@@ -24,8 +24,7 @@ function Navbar() {
             </div>
 
             <Button text="Get a Quote" />
+
         </nav>
     );
 }
-
-export default Navbar;
